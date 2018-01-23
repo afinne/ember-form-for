@@ -1,6 +1,6 @@
 {
   "name": "ember-form-for",
-  "version": "2.0.0-alpha.15",
+  "version": "2.0.0-alpha.17",
   "description": "Build \"Data Down Actions Up\" forms, with good default markup and built-in accessibility support",
   "keywords": [
     "ember-addon"
@@ -22,8 +22,8 @@
     "ember-cli-babel": "^5.1.7",
     "ember-cli-htmlbars": "^1.0.10",
     "ember-invoke-action": "1.4.0",
-    "ember-one-way-controls": "1.1.2",
-    "ember-runtime-enumerable-includes-polyfill": "^1.0.1"
+    "ember-one-way-controls": "^2.0.0",
+    "ember-runtime-enumerable-includes-polyfill": "^2.0.0"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",

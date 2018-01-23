@@ -23,7 +23,6 @@ const {
 const FormFieldComponent = Component.extend({
   layout,
 
-  i18n: service(),
   config: service('ember-form-for/config'),
 
   _defaultErrorsProperty: 'errors',
@@ -100,7 +99,7 @@ const FormFieldComponent = Component.extend({
     set(object, propertyName, value);
   },
 
-  labelText: computed('propertyName', 'label', function() {
+  labelText: computed('propertyName', 'label', 'i18n.locale', function() {
     let i18n = get(this, 'i18n');
     let label = get(this, 'label');
 

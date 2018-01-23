@@ -17,12 +17,11 @@ export default Component.extend({
   tagName: '',
   layout,
 
-  i18n: service(),
   config: service('ember-form-for/config'),
 
   modelName: or('object.modelName', 'object.constructor.modelName'),
 
-  labelText: computed('value', 'label', 'labelI18nKey', function() {
+  labelText: computed('value', 'label', 'labelI18nKey', 'i18n.locale', function() {
     let i18n = get(this, 'i18n');
     let label = get(this, 'label');
 
